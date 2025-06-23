@@ -9,9 +9,9 @@ const PORT = process.env.PORT || 7868;
 app.use(express.json());
 
 const users = [
-    { id: 1, name: 'Alice', age: 25 },
-    { id: 2, name: 'Bob', age: 30 },
-    { id: 3, name: 'Charlie', age: 35 }
+    { id: 1, name: 'Alice', age: 25, email: 'alice@example.com' },
+    { id: 2, name: 'Bob', age: 30, email: 'bob@example.com' },
+    { id: 3, name: 'Charlie', age: 35, email: 'charlie@example.com' }
 ];
 
 app.get('/users', (req, res) => {
